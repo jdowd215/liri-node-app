@@ -38,15 +38,11 @@ var getSpotify = function (songName) {
                 return console.log("Error occured: " + err);
             }
 
-            var songs = data.tracks.items;
-
-            for (var i = 0; i < songs.length; i++) {
-                console.log("========= Spotify Info =========");
-                console.log("artist(s): " + songs[i].artists);
-                console.log("song name: " + songs[i].name);
-                console.log("preview song: " + songs[i].preview_url);
-                console.log("album: " + songs[i].album.name);
-                console.log("========== End Spotify Info =========");
+            else {    
+                console.log("Artist: " + data.tracks.items[0].artists[0].name);
+                console.log("Song: " + data.tracks.items[0].name);
+                console.log("Preview: " + data.tracks.items[3].preview_url);
+                console.log("Album: " + data.tracks.items[0].album.name);
             }
         }
     );
