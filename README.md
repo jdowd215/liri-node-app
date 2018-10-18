@@ -38,7 +38,7 @@ LIRI uses the following commands:
  How to run LIRI Bot in your terminal:
  
 ![Demo GIF] 
-<iframe src="https://giphy.com/embed/MnEMZtsDtPhnJsBdYR" width="480" height="364" frameBorder="0" class="giphy-embed"></iframe>
+<iframe src="https://giphy.com/embed/MnEMZtsDtPhnJsBdYR" width="480" height="364"></iframe>
  
  
  
