@@ -50,8 +50,7 @@ LIRI uses the following commands:
  ![do-what-screenshot](images/Liri-Bot-do-what-2.PNG)
 
 Demo:
-![Demo GIF] 
-(https://giphy.com/embed/MnEMZtsDtPhnJsBdYR)
+![Demo GIF](https://giphy.com/embed/MnEMZtsDtPhnJsBdYR.gif)
  
  
  
