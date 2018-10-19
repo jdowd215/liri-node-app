@@ -75,13 +75,13 @@ function switchCommand(userCommand) {
     function getConcert() {
         //search Bands in Town Artist Events API for an artist and render info about event to terminal
         var artist = secondCommand;
+
         var queryUrl = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
 
         request(queryUrl, function (error, response, body) {
-
+            var data = JSON.parse(body);
             // If the request is successful = 200
-            if (!error && response.statusCode === 200) {
-                var data = JSON.parse(body);
+            if (!error && response.statusCode === 200 && !(data === undefined || data.length == 0)) {
                 //output to console
                 console.log('========== Concert Info ==========')
                 for (var i = 0; i < 3; i++) {
@@ -90,7 +90,10 @@ function switchCommand(userCommand) {
                     console.log("Date: " + moment(data[i].datetime, "YYYY-MM-DD").format("MM/DD/YYYY"));
                 };
                 console.log('========== End of Concert Info ==========')
-};
+            }
+            else {
+                console.log("No concert information available");
+            }
 });
 };
 
@@ -104,8 +107,9 @@ function switchCommand(userCommand) {
 
             // If the request is successful = 200
             if (!error && response.statusCode === 200) {
+                
                 var body = JSON.parse(body);
-
+                
                 //output to console
                 console.log('================ Movie Info ================');
                 console.log("Title: " + body.Title);
@@ -155,7 +159,6 @@ function switchCommand(userCommand) {
                 var concertCheck = dataArray[1].slice(1, -1);
                 getConcert(concertCheck);
             }
-
         });
     }
 }   //Closes switchCommand function
