@@ -35,22 +35,22 @@ LIRI uses the following commands:
      * npm packages: spotify, request, moment, dotenv
      * APIs: OMDB, Bands in Town
      
+     
  How to run LIRI Bot in your terminal (examples):
  
  1. run "node liri.js spotify-this-song Mr. Brightside"
- ![spotify-screenshot](images/Liri-Bot-spotify-2.PNG)
+ ![spotify-screenshot](images/LIRI-spotify.PNG)
  
- 2. run "node liri.js movie-this Shawshank Redemption"
- ![movie-screenshot](images/Liri-Bot-movie-2.PNG)
+ 2. run "node liri.js movie-this Sleepless in Seattle"
+ ![movie-screenshot](images/LIRI-movie.PNG)
  
- 3. run "node liri.js concert-this Maroon 5"
- ![concert-screenshot](images/Liri-Bot-concert-2.PNG)
+ 3. run "node liri.js concert-this Taylor Swift"
+ ![concert-screenshot](images/LIRI-concert.PNG)
  
  4. run "node liri.js do-what-it-says"
- ![do-what-screenshot](images/Liri-Bot-do-what-2.PNG)
+ ![do-what-screenshot](images/LIRI-do-what.PNG)
 
-Demo:
-![Demo GIF](https://giphy.com/embed/MnEMZtsDtPhnJsBdYR.gif)
+
  
  
  
